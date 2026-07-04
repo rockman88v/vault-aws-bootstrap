@@ -1,0 +1,25 @@
+aws_region = "ap-southeast-1"
+
+bucket_name = "vietdevops-terraform-state"
+
+dynamodb_table_name = "terraform-lock"
+
+github_org = "vietdevops"
+
+repository_name = "vault-config"
+
+runner_role_name = "vault-config-runner"
+
+branches = [
+  "main"
+]
+
+tags = {
+
+  Project = "Vault Workshop"
+
+  ManagedBy = "Terraform"
+
+  Owner = "Platform Team"
+
+}
