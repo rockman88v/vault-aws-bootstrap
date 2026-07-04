@@ -340,6 +340,17 @@ Initializing provider plugins found in the state...
 Terraform has been successfully initialized!
 
 ```
+## Bước 9
+Ghi lại output sau khi apply để sử dụng cho việc chạy terraform từ github pipeline
+```
+sysadmin@master:~/vault-aws-bootstrap$ terraform output
+github_oidc_provider_arn = "arn:aws:iam::818600xxxxxx:oidc-provider/token.actions.githubusercontent.com"
+github_runner_policy_arn = "arn:aws:iam::818600xxxxxx:policy/vault-config-runner-policy"
+github_runner_role_arn = "arn:aws:iam::818600xxxxxx:role/vault-config-runner"
+github_runner_role_name = "vault-config-runner"
+terraform_lock_table = "terraform-lock"
+terraform_state_bucket = "vietdevops-terraform-state-818600xxxxxx"
+```
 
 ---
 
