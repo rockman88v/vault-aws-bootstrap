@@ -185,6 +185,8 @@ git clone <repo>
 cd vault-aws-bootstrap
 ```
 
+Lưu ý comment toàn bộ nội dung file `backend.tf`, chỉ un-comment sau khi đã apply để tạo xong resources.
+
 ---
 
 ## Bước 2
@@ -267,11 +269,7 @@ terraform apply
 
 Sau khi S3 Backend đã được tạo
 
-Thêm file:
-
-```
-backend.tf
-```
+Thêm file `backend.tf` có nội dung mẫu như bên dưới hoặc uncomment file đã comment ở bước 1
 
 Ví dụ
 
