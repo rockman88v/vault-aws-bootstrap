@@ -1,25 +1,15 @@
-aws_region = "ap-southeast-1"
-
-bucket_name = "vietdevops-terraform-state"
-
+aws_region          = "ap-southeast-1"
+bucket_name         = "vietdevops-terraform-state-818600128395"
 dynamodb_table_name = "terraform-lock"
-
-github_org = "vietdevops"
-
-repository_name = "vault-config"
-
-runner_role_name = "vault-config-runner"
-
+github_org          = "rockman88v"
+repository_name     = "vault-config-terraform"
+runner_role_name    = "vault-config-runner"
 branches = [
   "main"
 ]
-
 tags = {
-
-  Project = "Vault Workshop"
-
+  Project   = "Vault Workshop"
   ManagedBy = "Terraform"
-
-  Owner = "Platform Team"
-
+  Owner     = "Platform Team"
+  Author    = "VietTQ"
 }
